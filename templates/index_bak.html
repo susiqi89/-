@@ -1,0 +1,466 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title></title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/reset.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/index.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/media.css' %}"/>
+    <script src="{% static 'js/jquery-3.1.0.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+</head>
+<body>
+<!--导航-->
+<nav>
+    <div class="inner">
+        <div class="nav_logo fl">
+            <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#nav_navbar" aria-expanded="false" aria-controls="nav_navbar">
+                <span class="sr-only">麦子学院</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="#" class="nav_logo_img"><img src="{% static 'images/logo.png' %}" alt="麦子学院" title="麦子学院"/></a>
+        </div>
+        <div id="nav_navbar" class="nav_con collapse navbar-collapse fr" aria-expanded="false">
+            <ul>
+                <li class="nav_con_vip font14"><a href="#" class="height40">企业直通车</a></li>
+                <li class="nav_con_seach">
+                    <input type="text" class="nav_seach_txt height40" placeholder="搜索你感兴趣的课程" data-toggle="dropdown" role="combobox" aria-haspopup="true" aria-expanded="false" aria-autocomplete="list"/><input type="button"  class="nav_seach_btn height40"/>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">产品经理</a></li>
+                        <li><a href="#">web前端</a></li>
+                        <li><a href="#">UI设计</a></li>
+                        <li><a href="#">Python</a></li>
+                        <li><a href="#">运营</a></li>
+                    </ul>
+                    <div class="nav_seach_txtcon font12">
+                        <a href="#">产品经理</a>
+                        <a href="#">web前端</a>
+                        <a href="#">ui</a>
+                    </div>
+                </li>
+                <li><a href="#" class="nav_con_app height40 font16 color66">移动APP</a></li>
+                <li class="nav_con_right fr">
+                    <a href="#" class="nav_laba fl"></a>
+                    <a href="#" class="nav_conr_userimg fl"><img src="{% static 'images/1_big.jpg' %}" alt="sumin_img"/></a>
+                    <div class="nav_conr_user font14 fl">
+                        <a href="#" class="nav_user_txt color66">15620142811</a>
+                        <a href="#" class="color99">[退出]</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section class="main">
+    <!--banner-->
+    <div class="banner">
+        <div class="banner_con">
+            <h2 class="font60 colorff text-center">在线学习保就业</h2>
+            <p class="font26 colorff text-center">麦子学院与拉勾、猎聘、智联招聘已达成战略合作</p>
+        </div>
+    </div>
+
+    <!--course-->
+    <div class="course">
+        <div class="inner">
+            <div class="course_list">
+                <ul class="course_list_con">
+                    <li>
+                        <div class="courselist_title">
+                            <p></p>
+                            <h4 class="font20 colorff text-center">软件开发</h4>
+                        </div>
+                        <div class="courselist_list font13">
+                            <ul class="fl">
+                                <li><a href="#" class="color99">Android应用开发</a></li>
+                                <li><a href="#" class="color99">iOS应用开发</a></li>
+                                <li><a href="#" class="color99">Web前端开发 </a></li>
+                                <li><a href="#" class="color99">Python Web开发</a></li>
+                            </ul>
+                            <ul class="fl">
+                                <li><a href="#" class="color99">Android应用开发</a></li>
+                                <li><a href="#" class="color99">iOS应用开发</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="courselist_title">
+                            <p></p>
+                            <h4 class="font20 colorff text-center">智能硬件</h4>
+                        </div>
+                        <div class="courselist_list font13">
+                            <ul class="fl">
+                                <li><a href="#" class="color99">Android应用开发</a></li>
+                                <li><a href="#" class="color99">iOS应用开发</a></li>
+                                <li><a href="#" class="color99">Web前端开发 </a></li>
+                                <li><a href="#" class="color99">Python Web开发</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="courselist_title">
+                            <p></p>
+                            <h4 class="font20 colorff text-center">产品运营</h4>
+                        </div>
+                        <div class="courselist_list font13">
+                            <ul class="fl">
+                                <li><a href="#" class="color99">Android应用开发</a></li>
+                                <li><a href="#" class="color99">iOS应用开发</a></li>
+                                <li><a href="#" class="color99">Web前端开发 </a></li>
+                                <li><a href="#" class="color99">Python Web开发</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="courselist_title">
+                            <p></p>
+                            <h4 class="font20 colorff text-center">设计</h4>
+                        </div>
+                        <div class="courselist_list font13">
+                            <ul class="fl">
+                                <li><a href="#" class="color99">Android应用开发</a></li>
+                                <li><a href="#" class="color99">iOS应用开发</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="course_con">
+                <article class="article fl">
+                    <div class="course_con1">
+                        <div class="course_con1_in1 text-center">
+                            <h4 class="font16 colorff">入学阶段</h4>
+                            <div class="course_con1_incon">
+                                <div class="course_con1_inconlist">
+                                    <div>
+                                        <div><img src="{% static 'images/course_con.png' %}" alt=""/></div>
+                                        <p class="font12">新手引导任务</p>
+                                    </div>
+                                    <div>
+                                        <div><img src="{% static 'images/course_con2.png' %}" alt=""/></div>
+                                        <p class="font12">互联网思维</p>
+                                    </div>
+                                    <div>
+                                        <div><img src="{% static 'images/course_con2.png' %}" alt=""/></div>
+                                        <p class="font12">互联网产品的商业模式</p>
+                                    </div>
+                                    <div style="margin-top: -25px;">
+                                        <div><img src="{% static 'images/course_con3.png' %}" alt=""/></div>
+                                        <p class="font12">产品的商业模式画布</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course_con1 course_con2">
+                        <div class="course_con1_in1 text-center">
+                            <h4 class="font16 colorff">基础阶段</h4>
+                            <div class="course_con1_incon">
+                                <div class="course_con1_inconlist">
+                                    <div>
+                                        <div><img src="{% static 'images/course_con4.png' %}" alt=""/></div>
+                                        <p class="font12">竞品分析</p>
+                                    </div>
+                                    <div>
+                                        <div><img src="{% static 'images/course_con4.png' %}" alt=""/></div>
+                                        <p class="font12">流程图</p>
+                                    </div>
+                                    <div>
+                                        <div><img src="{% static 'images/course_con4.png' %}" alt=""/></div>
+                                        <p class="font12">市场需求文档MRD</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <aside class="aside fr">
+                    <img src="{% static 'images/course_aside_03.jpg' %}" alt=""/>
+                </aside>
+            </div>
+        </div>
+    </div>
+
+    <!--teach-->
+    <div class="teach carousel slide" id="carousel-example-generic" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"><img src="{% static 'images/teach1.jpg' %} " alt=""/></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"><img src="{% static 'images/teach2.jpg' %}" alt=""/></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"><img src="{% static 'images/teach3.jpg' %}" alt=""/></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="{% static 'images/teach11.jpg' %}" alt=""/>
+                <div class="carousel-caption">
+                    <p class="font20">Chris</p>
+                    <h3 class="font40">Linkedin Data Tech</h3>
+                    <p class="font16">“We partner with organizations such as maizi education – and invest in their missions – to help these youth access new opportunities and direct paths to employment.”</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="{% static 'images/teach22.jpg' %}" alt=""/>
+                <div class="carousel-caption">
+                    <p class="font20">Chris</p>
+                    <h3 class="font40">Linkedin Data Tech</h3>
+                    <p class="font16">“We partner with organizations such as maizi education – and invest in their missions – to help these youth access new opportunities and direct paths to employment.”</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="{% static 'images/teach33.jpg' %}" alt=""/>
+                <div class="carousel-caption">
+                    <p class="font20">Chris</p>
+                    <h3 class="font40">Linkedin Data Tech</h3>
+                    <p class="font16">“We partner with organizations such as maizi education – and invest in their missions – to help these youth access new opportunities and direct paths to employment.”</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--合作-->
+    <div class="compceo">
+        <div class="comp text-center">
+            <h3 class="font40 color33" style="margin-bottom: 20px;" >合作企业</h3>
+            <p class="font16 color33" style="margin-bottom: 70px;">大量雇主信赖麦子学院</p>
+        </div>
+        <div class="ceo carousel slide" id="carousel-example-generic2" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic2" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic2" data-slide-to="1"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="{% static 'images/ceo.jpg' %}" alt=""/>
+                    <div class="carousel-caption colorff font20">
+                        <p>“稳扎稳打的知识结构，海量前沿的实战练习，踏实高效的工作习惯，让每一名学员到岗后都能快速进入状态。麦子学院就是我们的人才培养库，我们信赖麦子学院。”</p>
+                        <p>猎聘网创始人兼CEO</p>
+                        <p>戴科彬</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="{% static 'images/ceo.jpg' %}" alt=""/>
+                    <div class="carousel-caption colorff font20">
+                        <p>“稳扎稳打的知识结构，海量前沿的实战练习，踏实高效的工作习惯，让每一名学员到岗后都能快速进入状态。麦子学院就是我们的人才培养库，我们信赖麦子学院。”</p>
+                        <p>猎聘网创始人兼CEO</p>
+                        <p>戴科彬</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--优秀学员-->
+    <div class="compstudent">
+        <div class="comp text-center">
+            <h3 class="font40 color33" style="margin-bottom: 20px;" >就业学员</h3>
+            <p class="font16 color33" style="margin-bottom: 70px;">从这里走出了大批受企业青睐的学员</p>
+        </div>
+        <div class="student row">
+            <div class="col-md-3 text-center">
+                <img src="{% static 'images/student1.jpg' %}" alt="">
+                <div class="student_con">
+                    <p class="student_con_p1 font26 colorff"><span class="font16">周安伟</span><br>Cocos2d-x开发学员 <br> <b class="font16">月薪12K,签约腾讯</b></p>
+                    <p class="student_con_p2">团队是一个整体，讲究的是合作，有事没事多沟通，往往自己苦思冥想做出的结果却不适合。</p>
+                </div>
+            </div>
+            <div class="col-md-3 text-center">
+                <img src="{% static 'images/student2.jpg' %}" alt="">
+                <div class="student_con">
+                    <p class="student_con_p1 font26 colorff"><span class="font16">周安伟</span><br>Cocos2d-x开发学员 <br> <b class="font16">月薪12K,签约腾讯</b></p>
+                    <p class="student_con_p2">团队是一个整体，讲究的是合作，有事没事多沟通，往往自己苦思冥想做出的结果却不适合。</p>
+                </div>
+            </div>
+            <div class="col-md-3 text-center">
+                <img src="{% static 'images/student3.jpg' %}" alt="">
+                <div class="student_con">
+                    <p class="student_con_p1 font26 colorff"><span class="font16">周安伟</span><br>Cocos2d-x开发学员 <br> <b class="font16">月薪12K,签约腾讯</b></p>
+                    <p class="student_con_p2">团队是一个整体，讲究的是合作，有事没事多沟通，往往自己苦思冥想做出的结果却不适合。</p>
+                </div>
+            </div>
+            <div class="col-md-3 text-center">
+                <img src="{% static 'images/student4.jpg' %}" alt="">
+                <div class="student_con">
+                    <p class="student_con_p1 font26 colorff"><span class="font16">周安伟</span><br>Cocos2d-x开发学员 <br> <b class="font16">月薪12K,签约腾讯</b></p>
+                    <p class="student_con_p2">团队是一个整体，讲究的是合作，有事没事多沟通，往往自己苦思冥想做出的结果却不适合。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--study-->
+    <div class="study text-center">
+        <h3 class="font40 color33" style="padding: 50px 0" >大家都在学</h3>
+        <ul class="study_list inner">
+            <li>
+                <a href="#" title="Python Web开发">
+                    <div class="study_list_img"><img src="{% static 'images/11python1.png' %}" alt=""></div>
+                    <div class="color66 study_list_txt">
+                        <h3 class="font16 color33">Python Web</h3>
+                        <p>49课程</p>
+                        <p>364天学习时长</p>
+                        <p class="color99">24108人正在学习</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#" title="Python Web开发">
+                    <div class="study_list_img"><img src="{% static 'images/12Android.png' %}" alt=""></div>
+                    <div class="color66 study_list_txt">
+                        <h3 class="font16 color33">Python Web</h3>
+                        <p>49课程</p>
+                        <p>364天学习时长</p>
+                        <p class="color99">24108人正在学习</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#" title="Python Web开发">
+                    <div class="study_list_img"><img src="{% static 'images/13PHP.png' %}" alt=""></div>
+                    <div class="color66 study_list_txt">
+                        <h3 class="font16 color33">Python Web</h3>
+                        <p>49课程</p>
+                        <p>364天学习时长</p>
+                        <p class="color99">24108人正在学习</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#" title="Python Web开发">
+                    <div class="study_list_img"><img src="{% static 'images/14Web.png' %}" alt=""></div>
+                    <div class="color66 study_list_txt">
+                        <h3 class="font16 color33">Python Web</h3>
+                        <p>49课程</p>
+                        <p>364天学习时长</p>
+                        <p class="color99">24108人正在学习</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#" title="Python Web开发">
+                    <div class="study_list_img"><img src="{% static 'images/21iOS.png' %}" alt=""></div>
+                    <div class="color66 study_list_txt">
+                        <h3 class="font16 color33">Python Web</h3>
+                        <p>49课程</p>
+                        <p>364天学习时长</p>
+                        <p class="color99">24108人正在学习</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#" title="Python Web开发">
+                    <div class="study_list_img"><img src="{% static 'images/22ui.jpg' %}" alt=""></div>
+                    <div class="color66 study_list_txt">
+                        <h3 class="font16 color33">Python Web</h3>
+                        <p>49课程</p>
+                        <p>364天学习时长</p>
+                        <p class="color99">24108人正在学习</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#" title="Python Web开发">
+                    <div class="study_list_img"><img src="{% static 'images/23.png' %}" alt=""></div>
+                    <div class="color66 study_list_txt">
+                        <h3 class="font16 color33">Python Web</h3>
+                        <p>49课程</p>
+                        <p>364天学习时长</p>
+                        <p class="color99">24108人正在学习</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#" title="Python Web开发">
+                    <div class="study_list_img"><img src="{% static 'images/24.png' %}" alt=""></div>
+                    <div class="color66 study_list_txt">
+                        <h3 class="font16 color33">Python Web</h3>
+                        <p>49课程</p>
+                        <p>364天学习时长</p>
+                        <p class="color99">24108人正在学习</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#" title="Python Web开发">
+                    <div class="study_list_img"><img src="{% static 'images/31.png' %}" alt=""></div>
+                    <div class="color66 study_list_txt">
+                        <h3 class="font16 color33">Python Web</h3>
+                        <p>49课程</p>
+                        <p>364天学习时长</p>
+                        <p class="color99">24108人正在学习</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#" title="Python Web开发">
+                    <div class="study_list_img"><img src="{% static 'images/32test_large.png' %}" alt=""></div>
+                    <div class="color66 study_list_txt">
+                        <h3 class="font16 color33">Python Web</h3>
+                        <p>49课程</p>
+                        <p>364天学习时长</p>
+                        <p class="color99">24108人正在学习</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#" title="Python Web开发">
+                    <div class="study_list_img"><img src="{% static 'images/33.png' %}" alt=""></div>
+                    <div class="color66 study_list_txt">
+                        <h3 class="font16 color33">Python Web</h3>
+                        <p>49课程</p>
+                        <p>364天学习时长</p>
+                        <p class="color99">24108人正在学习</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#" title="Python Web开发">
+                    <div class="study_list_img"><img src="{% static 'images/34pingmian.png' %}" alt=""></div>
+                    <div class="color66 study_list_txt">
+                        <h3 class="font16 color33">Python Web</h3>
+                        <p>49课程</p>
+                        <p>364天学习时长</p>
+                        <p class="color99">24108人正在学习</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#" title="Python Web开发">
+                    <div class="study_list_img"><img src="{% static 'images/41.png' %}" alt=""></div>
+                    <div class="color66 study_list_txt">
+                        <h3 class="font16 color33">Python Web</h3>
+                        <p>49课程</p>
+                        <p>364天学习时长</p>
+                        <p class="color99">24108人正在学习</p>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
+
+
+<!--footer-->
+<footer>
+    <div class="inner color99">
+        <div class="footer_logo fl"><img src="{% static 'images/logo.png' %}" alt=""/></div>
+        <div class="ourinfo font12 fl">
+            <p><a href="#">关于我们</a>|<a href="#">加入我们</a>|<a href="#">联系我们</a></p>
+            <p class="color99">Copyright &copy; 2012-2017 麦子学院 All Right Reserved. 蜀ICP备13014270号-4</p>
+        </div>
+        <div class="footer_right fr">
+            <span class="font20 color99">服务热线：400-862-8862</span>
+            <a href="javascript:void(0);" class="weixin">
+                <div class="weixinerweima"></div>
+            </a>
+            <a href="#" class="weibo"></a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

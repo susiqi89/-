@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block main %}
+    <!--banner-->
+    <div class="banner">
+        <div class="banner_con">
+            <h2 class="font60 colorff text-center">在线学习保就业</h2>
+            <p class="font26 colorff text-center">麦子学院与拉勾、猎聘、智联招聘已达成战略合作</p>
+        </div>
+    </div>
+
+    {% include 'course.html' %}
+    {% include 'teach.html' %}
+    {% include 'compceo.html'%}
+    {% include 'compstudent.html' %}
+    {% include 'study.html' %}
+
+{% endblock %}}

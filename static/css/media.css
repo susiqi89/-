@@ -1,0 +1,171 @@
+@media screen and (max-width: 1200px){
+    .inner{
+        width: 100%;
+    }
+    nav .nav_con_seach{
+        display: none;
+
+    }
+
+    .course_con .article{
+        float: none;
+        width: 100%;
+    }
+    .course_con aside{
+        display: none;
+    }
+
+    /*teach*/
+    .carousel-indicators{
+        width: 72%;
+    }
+    .teach .carousel-caption{
+        bottom:0;
+        padding-bottom: 30px;
+    }
+
+    .student{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .student>div{
+        width: 25%;
+        float: left;
+        border: 1px solid #ffffff;
+    }
+    .student .student_con_p1{
+        font-size: 20px;
+        padding-top: 63%;
+    }
+    .student .student_con_p2{
+        padding: 0 10px;
+        top: 80%;
+    }
+
+    .ceo .carousel-caption{
+        font-size: 12px;
+        bottom: 20px;
+    }
+
+    /* study*/
+    .study .study_list>li{
+        margin:0 auto;
+        margin: -1px 0 0 -1px;
+        width: 50%;
+    }
+    .study .study_list .study_list_txt{
+        width: auto;
+        margin-left: 7px;
+    }
+
+    /*footer*/
+    footer .inner>div{
+        float: none;
+    }
+    footer .ourinfo{
+        margin: 10px 0;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .course_con1_inconlist>div{
+        padding-left: 50px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    nav .nav_logo{
+        float: none;
+    }
+    .navbar-collapse.in{
+        padding-bottom: 20px;
+        -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+        -moz-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+        margin-bottom: 10px;
+    }
+    nav .nav_con>ul{
+        padding: 0 15px;
+        background: #ffffff;
+    }
+    nav .nav_con>ul>li{
+        float: none;
+    }
+    nav .nav_con_seach{
+        margin: 0;
+        display: block;
+    }
+    .dropdown-menu{
+        position: relative;
+        float: none;
+    }
+    nav .nav_con_right{
+        margin: 0;
+    }
+
+
+
+    .course_con1_inconlist>div:nth-child(2), .course_con1_inconlist>div:nth-child(3){
+        display: none;
+    }
+
+    .teach .carousel-caption{
+        left: 50%;
+        right: 0;
+        top: 50%;
+        bottom: 0;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+    .teach .carousel-caption p{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 680px) {
+    nav .nav_seach_txt{
+        width: 300px;
+    }
+    nav .nav_seach_txtcon{
+        display: none;
+    }
+
+    .banner_con h2{
+        font-size: 55px;
+    }
+    .banner_con p{
+        font-size: 20px;
+    }
+    
+    .course_list{
+        height: auto;
+    }
+    .course_list_con{
+        position: relative;
+    }
+    .course_list_con>li{
+        width: 50%;
+        border: 1px solid #ffffff;
+    }
+    .course .course_list{
+        height: auto;
+        margin-bottom: 0;
+    }
+
+    .courselist_list ul {
+        width: 50%;
+    }
+
+    .student>div{
+        width: 50%;
+        float: left;
+        border: 1px solid #ffffff;
+    }
+
+}
+
+

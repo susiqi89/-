@@ -1,0 +1,20 @@
+{% load staticfiles %}
+    <!--优秀学员-->
+    <div class="compstudent">
+        <div class="comp text-center">
+            <h3 class="font40 color33" style="margin-bottom: 20px;" >就业学员</h3>
+            <p class="font16 color33" style="margin-bottom: 70px;">从这里走出了大批受企业青睐的学员</p>
+        </div>
+        <div class="student row">
+            {% for studentcon in studentlistcon %}
+            <div class="col-md-3 text-center">
+                <img src="/uploads/{{ studentcon.studentImg }}" alt="">
+                <div class="student_con">
+                    <p class="student_con_p1 font26 colorff"><span class="font16">{{ studentcon.studentName }}</span><br>{{ studentcon.studentStudy}}学员 <br> <b class="font16">{{ studentcon.studentDesc}}</b></p>
+                    <p class="student_con_p2">{{ studentcon.studentSay }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+

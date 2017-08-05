@@ -1,0 +1,21 @@
+{% load staticfiles %}
+
+    <!--study-->
+    <div class="study text-center">
+        <h3 class="font40 color33" style="padding: 50px 0" >大家都在学</h3>
+        <ul class="study_list inner">
+            {% for studycon in studylistcon %}
+            <li>
+                <a href="#" title="{{ studycon.studyName }}">
+                    <div class="study_list_img"><img src="/uploads/{{ studycon.studyImg }}" alt=""></div>
+                    <div class="color66 study_list_txt">
+                        <h3 class="font16 color33">{{ studycon.studyName}}</h3>
+                        <p>{{ studycon.studyCourse }}课程</p>
+                        <p>{{ studycon.studyTime }}学习时长</p>
+                        <p class="color99">{{ studycon.studyCounts }}人正在学习</p>
+                    </div>
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
