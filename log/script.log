@@ -1,0 +1,894 @@
+2017-08-04 22:56:26,660 [Thread-37:8120] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/maizi_app/students/add/
+Traceback (most recent call last):
+  File "C:\django\django_venv\lib\site-packages\django\contrib\admin\options.py", line 639, in get_form
+    return modelform_factory(self.model, **defaults)
+  File "C:\django\django_venv\lib\site-packages\django\forms\models.py", line 545, in modelform_factory
+    return type(form)(class_name, (form,), form_class_attrs)
+  File "C:\django\django_venv\lib\site-packages\django\forms\models.py", line 257, in __new__
+    raise FieldError(message)
+django.core.exceptions.FieldError: Unknown field(s) (studentIMG) specified for Students
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\django\django_venv\lib\site-packages\django\core\handlers\base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\django\django_venv\lib\site-packages\django\core\handlers\base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\django\django_venv\lib\site-packages\django\contrib\admin\options.py", line 541, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\django\django_venv\lib\site-packages\django\utils\decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\django\django_venv\lib\site-packages\django\views\decorators\cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\django\django_venv\lib\site-packages\django\contrib\admin\sites.py", line 244, in inner
+    return view(request, *args, **kwargs)
+  File "C:\django\django_venv\lib\site-packages\django\contrib\admin\options.py", line 1437, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "C:\django\django_venv\lib\site-packages\django\utils\decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "C:\django\django_venv\lib\site-packages\django\utils\decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\django\django_venv\lib\site-packages\django\utils\decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "c:\python35\Lib\contextlib.py", line 30, in inner
+    return func(*args, **kwds)
+  File "C:\django\django_venv\lib\site-packages\django\contrib\admin\options.py", line 1367, in changeform_view
+    ModelForm = self.get_form(request, obj)
+  File "C:\django\django_venv\lib\site-packages\django\contrib\admin\options.py", line 642, in get_form
+    % (e, self.__class__.__name__))
+django.core.exceptions.FieldError: Unknown field(s) (studentIMG) specified for Students. Check fields/fieldsets/exclude attributes of class studentsAdmin.
+2017-08-04 22:56:50,351 [Thread-38:5880] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/maizi_app/students/add/
+Traceback (most recent call last):
+  File "C:\django\django_venv\lib\site-packages\django\contrib\admin\options.py", line 639, in get_form
+    return modelform_factory(self.model, **defaults)
+  File "C:\django\django_venv\lib\site-packages\django\forms\models.py", line 545, in modelform_factory
+    return type(form)(class_name, (form,), form_class_attrs)
+  File "C:\django\django_venv\lib\site-packages\django\forms\models.py", line 257, in __new__
+    raise FieldError(message)
+django.core.exceptions.FieldError: Unknown field(s) (studentIMG) specified for Students
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\django\django_venv\lib\site-packages\django\core\handlers\base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\django\django_venv\lib\site-packages\django\core\handlers\base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\django\django_venv\lib\site-packages\django\contrib\admin\options.py", line 541, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\django\django_venv\lib\site-packages\django\utils\decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\django\django_venv\lib\site-packages\django\views\decorators\cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\django\django_venv\lib\site-packages\django\contrib\admin\sites.py", line 244, in inner
+    return view(request, *args, **kwargs)
+  File "C:\django\django_venv\lib\site-packages\django\contrib\admin\options.py", line 1437, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "C:\django\django_venv\lib\site-packages\django\utils\decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "C:\django\django_venv\lib\site-packages\django\utils\decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\django\django_venv\lib\site-packages\django\utils\decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "c:\python35\Lib\contextlib.py", line 30, in inner
+    return func(*args, **kwds)
+  File "C:\django\django_venv\lib\site-packages\django\contrib\admin\options.py", line 1367, in changeform_view
+    ModelForm = self.get_form(request, obj)
+  File "C:\django\django_venv\lib\site-packages\django\contrib\admin\options.py", line 642, in get_form
+    % (e, self.__class__.__name__))
+django.core.exceptions.FieldError: Unknown field(s) (studentIMG) specified for Students. Check fields/fieldsets/exclude attributes of class studentsAdmin.
+2017-08-04 23:01:51,284 [Thread-2:5140] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/maizi_app/students/
+Traceback (most recent call last):
+  File "C:\django\django_venv\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "C:\django\django_venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 323, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such column: maizi_app_students.studentsay
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\django\django_venv\lib\site-packages\django\core\handlers\base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\django\django_venv\lib\site-packages\django\core\handlers\base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\django\django_venv\lib\site-packages\django\contrib\admin\options.py", line 541, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\django\django_venv\lib\site-packages\django\utils\decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\django\django_venv\lib\site-packages\django\views\decorators\cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\django\django_venv\lib\site-packages\django\contrib\admin\sites.py", line 244, in inner
+    return view(request, *args, **kwargs)
+  File "C:\django\django_venv\lib\site-packages\django\utils\decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "C:\django\django_venv\lib\site-packages\django\utils\decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\django\django_venv\lib\site-packages\django\utils\decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "C:\django\django_venv\lib\site-packages\django\contrib\admin\options.py", line 1577, in changelist_view
+    selection_note=_('0 of %(cnt)s selected') % {'cnt': len(cl.result_list)},
+  File "C:\django\django_venv\lib\site-packages\django\db\models\query.py", line 240, in __len__
+    self._fetch_all()
+  File "C:\django\django_venv\lib\site-packages\django\db\models\query.py", line 1074, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "C:\django\django_venv\lib\site-packages\django\db\models\query.py", line 52, in __iter__
+    results = compiler.execute_sql()
+  File "C:\django\django_venv\lib\site-packages\django\db\models\sql\compiler.py", line 848, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\django\django_venv\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "C:\django\django_venv\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "C:\django\django_venv\lib\site-packages\django\db\utils.py", line 95, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "C:\django\django_venv\lib\site-packages\django\utils\six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "C:\django\django_venv\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "C:\django\django_venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 323, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such column: maizi_app_students.studentsay
+2017-08-04 23:05:41,709 [Thread-4:2332] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/maizi_app/students/
+Traceback (most recent call last):
+  File "C:\django\django_venv\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "C:\django\django_venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 323, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such column: maizi_app_students.studentsay
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\django\django_venv\lib\site-packages\django\core\handlers\base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\django\django_venv\lib\site-packages\django\core\handlers\base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\django\django_venv\lib\site-packages\django\contrib\admin\options.py", line 541, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\django\django_venv\lib\site-packages\django\utils\decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\django\django_venv\lib\site-packages\django\views\decorators\cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\django\django_venv\lib\site-packages\django\contrib\admin\sites.py", line 244, in inner
+    return view(request, *args, **kwargs)
+  File "C:\django\django_venv\lib\site-packages\django\utils\decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "C:\django\django_venv\lib\site-packages\django\utils\decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\django\django_venv\lib\site-packages\django\utils\decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "C:\django\django_venv\lib\site-packages\django\contrib\admin\options.py", line 1577, in changelist_view
+    selection_note=_('0 of %(cnt)s selected') % {'cnt': len(cl.result_list)},
+  File "C:\django\django_venv\lib\site-packages\django\db\models\query.py", line 240, in __len__
+    self._fetch_all()
+  File "C:\django\django_venv\lib\site-packages\django\db\models\query.py", line 1074, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "C:\django\django_venv\lib\site-packages\django\db\models\query.py", line 52, in __iter__
+    results = compiler.execute_sql()
+  File "C:\django\django_venv\lib\site-packages\django\db\models\sql\compiler.py", line 848, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\django\django_venv\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "C:\django\django_venv\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "C:\django\django_venv\lib\site-packages\django\db\utils.py", line 95, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "C:\django\django_venv\lib\site-packages\django\utils\six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "C:\django\django_venv\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "C:\django\django_venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 323, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such column: maizi_app_students.studentsay
+2017-08-04 23:06:49,302 [Thread-2:8000] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/maizi_app/students/
+Traceback (most recent call last):
+  File "C:\django\django_venv\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "C:\django\django_venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 323, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such column: maizi_app_students.studentSay
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\django\django_venv\lib\site-packages\django\core\handlers\base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\django\django_venv\lib\site-packages\django\core\handlers\base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\django\django_venv\lib\site-packages\django\contrib\admin\options.py", line 541, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\django\django_venv\lib\site-packages\django\utils\decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\django\django_venv\lib\site-packages\django\views\decorators\cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\django\django_venv\lib\site-packages\django\contrib\admin\sites.py", line 244, in inner
+    return view(request, *args, **kwargs)
+  File "C:\django\django_venv\lib\site-packages\django\utils\decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "C:\django\django_venv\lib\site-packages\django\utils\decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\django\django_venv\lib\site-packages\django\utils\decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "C:\django\django_venv\lib\site-packages\django\contrib\admin\options.py", line 1577, in changelist_view
+    selection_note=_('0 of %(cnt)s selected') % {'cnt': len(cl.result_list)},
+  File "C:\django\django_venv\lib\site-packages\django\db\models\query.py", line 240, in __len__
+    self._fetch_all()
+  File "C:\django\django_venv\lib\site-packages\django\db\models\query.py", line 1074, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "C:\django\django_venv\lib\site-packages\django\db\models\query.py", line 52, in __iter__
+    results = compiler.execute_sql()
+  File "C:\django\django_venv\lib\site-packages\django\db\models\sql\compiler.py", line 848, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\django\django_venv\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "C:\django\django_venv\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "C:\django\django_venv\lib\site-packages\django\db\utils.py", line 95, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "C:\django\django_venv\lib\site-packages\django\utils\six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "C:\django\django_venv\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "C:\django\django_venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 323, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such column: maizi_app_students.studentSay
+2017-08-04 23:06:55,632 [Thread-4:7448] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/maizi_app/students/
+Traceback (most recent call last):
+  File "C:\django\django_venv\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "C:\django\django_venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 323, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such column: maizi_app_students.studentSay
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\django\django_venv\lib\site-packages\django\core\handlers\base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\django\django_venv\lib\site-packages\django\core\handlers\base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\django\django_venv\lib\site-packages\django\contrib\admin\options.py", line 541, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\django\django_venv\lib\site-packages\django\utils\decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\django\django_venv\lib\site-packages\django\views\decorators\cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\django\django_venv\lib\site-packages\django\contrib\admin\sites.py", line 244, in inner
+    return view(request, *args, **kwargs)
+  File "C:\django\django_venv\lib\site-packages\django\utils\decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "C:\django\django_venv\lib\site-packages\django\utils\decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\django\django_venv\lib\site-packages\django\utils\decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "C:\django\django_venv\lib\site-packages\django\contrib\admin\options.py", line 1577, in changelist_view
+    selection_note=_('0 of %(cnt)s selected') % {'cnt': len(cl.result_list)},
+  File "C:\django\django_venv\lib\site-packages\django\db\models\query.py", line 240, in __len__
+    self._fetch_all()
+  File "C:\django\django_venv\lib\site-packages\django\db\models\query.py", line 1074, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "C:\django\django_venv\lib\site-packages\django\db\models\query.py", line 52, in __iter__
+    results = compiler.execute_sql()
+  File "C:\django\django_venv\lib\site-packages\django\db\models\sql\compiler.py", line 848, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\django\django_venv\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "C:\django\django_venv\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "C:\django\django_venv\lib\site-packages\django\db\utils.py", line 95, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "C:\django\django_venv\lib\site-packages\django\utils\six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "C:\django\django_venv\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "C:\django\django_venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 323, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such column: maizi_app_students.studentSay
+2017-08-04 23:06:58,771 [Thread-6:6340] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/maizi_app/students/
+Traceback (most recent call last):
+  File "C:\django\django_venv\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "C:\django\django_venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 323, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such column: maizi_app_students.studentSay
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\django\django_venv\lib\site-packages\django\core\handlers\base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\django\django_venv\lib\site-packages\django\core\handlers\base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\django\django_venv\lib\site-packages\django\contrib\admin\options.py", line 541, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\django\django_venv\lib\site-packages\django\utils\decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\django\django_venv\lib\site-packages\django\views\decorators\cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\django\django_venv\lib\site-packages\django\contrib\admin\sites.py", line 244, in inner
+    return view(request, *args, **kwargs)
+  File "C:\django\django_venv\lib\site-packages\django\utils\decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "C:\django\django_venv\lib\site-packages\django\utils\decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\django\django_venv\lib\site-packages\django\utils\decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "C:\django\django_venv\lib\site-packages\django\contrib\admin\options.py", line 1577, in changelist_view
+    selection_note=_('0 of %(cnt)s selected') % {'cnt': len(cl.result_list)},
+  File "C:\django\django_venv\lib\site-packages\django\db\models\query.py", line 240, in __len__
+    self._fetch_all()
+  File "C:\django\django_venv\lib\site-packages\django\db\models\query.py", line 1074, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "C:\django\django_venv\lib\site-packages\django\db\models\query.py", line 52, in __iter__
+    results = compiler.execute_sql()
+  File "C:\django\django_venv\lib\site-packages\django\db\models\sql\compiler.py", line 848, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\django\django_venv\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "C:\django\django_venv\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "C:\django\django_venv\lib\site-packages\django\db\utils.py", line 95, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "C:\django\django_venv\lib\site-packages\django\utils\six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "C:\django\django_venv\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "C:\django\django_venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 323, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such column: maizi_app_students.studentSay
+2017-08-04 23:07:37,482 [Thread-8:4620] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/maizi_app/students/
+Traceback (most recent call last):
+  File "C:\django\django_venv\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "C:\django\django_venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 323, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such column: maizi_app_students.studentSay
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\django\django_venv\lib\site-packages\django\core\handlers\base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\django\django_venv\lib\site-packages\django\core\handlers\base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\django\django_venv\lib\site-packages\django\contrib\admin\options.py", line 541, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\django\django_venv\lib\site-packages\django\utils\decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\django\django_venv\lib\site-packages\django\views\decorators\cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\django\django_venv\lib\site-packages\django\contrib\admin\sites.py", line 244, in inner
+    return view(request, *args, **kwargs)
+  File "C:\django\django_venv\lib\site-packages\django\utils\decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "C:\django\django_venv\lib\site-packages\django\utils\decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\django\django_venv\lib\site-packages\django\utils\decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "C:\django\django_venv\lib\site-packages\django\contrib\admin\options.py", line 1577, in changelist_view
+    selection_note=_('0 of %(cnt)s selected') % {'cnt': len(cl.result_list)},
+  File "C:\django\django_venv\lib\site-packages\django\db\models\query.py", line 240, in __len__
+    self._fetch_all()
+  File "C:\django\django_venv\lib\site-packages\django\db\models\query.py", line 1074, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "C:\django\django_venv\lib\site-packages\django\db\models\query.py", line 52, in __iter__
+    results = compiler.execute_sql()
+  File "C:\django\django_venv\lib\site-packages\django\db\models\sql\compiler.py", line 848, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\django\django_venv\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "C:\django\django_venv\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "C:\django\django_venv\lib\site-packages\django\db\utils.py", line 95, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "C:\django\django_venv\lib\site-packages\django\utils\six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "C:\django\django_venv\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "C:\django\django_venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 323, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such column: maizi_app_students.studentSay
+2017-08-04 23:08:49,110 [Thread-10:7976] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/maizi_app/students/
+Traceback (most recent call last):
+  File "C:\django\django_venv\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "C:\django\django_venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 323, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such column: maizi_app_students.studentSay
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\django\django_venv\lib\site-packages\django\core\handlers\base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\django\django_venv\lib\site-packages\django\core\handlers\base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\django\django_venv\lib\site-packages\django\contrib\admin\options.py", line 541, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\django\django_venv\lib\site-packages\django\utils\decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\django\django_venv\lib\site-packages\django\views\decorators\cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\django\django_venv\lib\site-packages\django\contrib\admin\sites.py", line 244, in inner
+    return view(request, *args, **kwargs)
+  File "C:\django\django_venv\lib\site-packages\django\utils\decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "C:\django\django_venv\lib\site-packages\django\utils\decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\django\django_venv\lib\site-packages\django\utils\decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "C:\django\django_venv\lib\site-packages\django\contrib\admin\options.py", line 1577, in changelist_view
+    selection_note=_('0 of %(cnt)s selected') % {'cnt': len(cl.result_list)},
+  File "C:\django\django_venv\lib\site-packages\django\db\models\query.py", line 240, in __len__
+    self._fetch_all()
+  File "C:\django\django_venv\lib\site-packages\django\db\models\query.py", line 1074, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "C:\django\django_venv\lib\site-packages\django\db\models\query.py", line 52, in __iter__
+    results = compiler.execute_sql()
+  File "C:\django\django_venv\lib\site-packages\django\db\models\sql\compiler.py", line 848, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\django\django_venv\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "C:\django\django_venv\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "C:\django\django_venv\lib\site-packages\django\db\utils.py", line 95, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "C:\django\django_venv\lib\site-packages\django\utils\six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "C:\django\django_venv\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "C:\django\django_venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 323, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such column: maizi_app_students.studentSay
+2017-08-04 23:14:54,022 [Thread-12:7160] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/maizi_app/students/
+Traceback (most recent call last):
+  File "C:\django\django_venv\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "C:\django\django_venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 323, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such column: maizi_app_students.studentSay
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\django\django_venv\lib\site-packages\django\core\handlers\base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\django\django_venv\lib\site-packages\django\core\handlers\base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\django\django_venv\lib\site-packages\django\contrib\admin\options.py", line 541, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\django\django_venv\lib\site-packages\django\utils\decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\django\django_venv\lib\site-packages\django\views\decorators\cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\django\django_venv\lib\site-packages\django\contrib\admin\sites.py", line 244, in inner
+    return view(request, *args, **kwargs)
+  File "C:\django\django_venv\lib\site-packages\django\utils\decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "C:\django\django_venv\lib\site-packages\django\utils\decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\django\django_venv\lib\site-packages\django\utils\decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "C:\django\django_venv\lib\site-packages\django\contrib\admin\options.py", line 1577, in changelist_view
+    selection_note=_('0 of %(cnt)s selected') % {'cnt': len(cl.result_list)},
+  File "C:\django\django_venv\lib\site-packages\django\db\models\query.py", line 240, in __len__
+    self._fetch_all()
+  File "C:\django\django_venv\lib\site-packages\django\db\models\query.py", line 1074, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "C:\django\django_venv\lib\site-packages\django\db\models\query.py", line 52, in __iter__
+    results = compiler.execute_sql()
+  File "C:\django\django_venv\lib\site-packages\django\db\models\sql\compiler.py", line 848, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\django\django_venv\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "C:\django\django_venv\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "C:\django\django_venv\lib\site-packages\django\db\utils.py", line 95, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "C:\django\django_venv\lib\site-packages\django\utils\six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "C:\django\django_venv\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "C:\django\django_venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 323, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such column: maizi_app_students.studentSay
+2017-08-05 06:51:09,351 [Thread-9:8008] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/maizi_app/students/1/change/
+Traceback (most recent call last):
+  File "C:\django\django_venv\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "C:\django\django_venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 323, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: database is locked
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\django\django_venv\lib\site-packages\django\core\handlers\base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\django\django_venv\lib\site-packages\django\core\handlers\base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\django\django_venv\lib\site-packages\django\contrib\admin\options.py", line 541, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\django\django_venv\lib\site-packages\django\utils\decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\django\django_venv\lib\site-packages\django\views\decorators\cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\django\django_venv\lib\site-packages\django\contrib\admin\sites.py", line 244, in inner
+    return view(request, *args, **kwargs)
+  File "C:\django\django_venv\lib\site-packages\django\contrib\admin\options.py", line 1440, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "C:\django\django_venv\lib\site-packages\django\utils\decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "C:\django\django_venv\lib\site-packages\django\utils\decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\django\django_venv\lib\site-packages\django\utils\decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "c:\python35\Lib\contextlib.py", line 30, in inner
+    return func(*args, **kwds)
+  File "C:\django\django_venv\lib\site-packages\django\contrib\admin\options.py", line 1378, in changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "C:\django\django_venv\lib\site-packages\django\contrib\admin\options.py", line 991, in save_model
+    obj.save()
+  File "C:\django\django_venv\lib\site-packages\django\db\models\base.py", line 708, in save
+    force_update=force_update, update_fields=update_fields)
+  File "C:\django\django_venv\lib\site-packages\django\db\models\base.py", line 736, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "C:\django\django_venv\lib\site-packages\django\db\models\base.py", line 801, in _save_table
+    forced_update)
+  File "C:\django\django_venv\lib\site-packages\django\db\models\base.py", line 851, in _do_update
+    return filtered._update(values) > 0
+  File "C:\django\django_venv\lib\site-packages\django\db\models\query.py", line 645, in _update
+    return query.get_compiler(self.db).execute_sql(CURSOR)
+  File "C:\django\django_venv\lib\site-packages\django\db\models\sql\compiler.py", line 1149, in execute_sql
+    cursor = super(SQLUpdateCompiler, self).execute_sql(result_type)
+  File "C:\django\django_venv\lib\site-packages\django\db\models\sql\compiler.py", line 848, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\django\django_venv\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "C:\django\django_venv\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "C:\django\django_venv\lib\site-packages\django\db\utils.py", line 95, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "C:\django\django_venv\lib\site-packages\django\utils\six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "C:\django\django_venv\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "C:\django\django_venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 323, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: database is locked
+2017-08-05 09:15:12,670 [Thread-384:7832] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\django\django_venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\django\django_venv\lib\site-packages\django\core\handlers\base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\django\django_venv\lib\site-packages\django\core\handlers\base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\django\maizi\maizi_app\views.py", line 12, in index
+    return render(request, 'index.html', locals())
+  File "C:\django\django_venv\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "C:\django\django_venv\lib\site-packages\django\template\loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "C:\django\django_venv\lib\site-packages\django\template\backends\django.py", line 95, in render
+    return self.template.render(context)
+  File "C:\django\django_venv\lib\site-packages\django\template\base.py", line 206, in render
+    return self._render(context)
+  File "C:\django\django_venv\lib\site-packages\django\template\base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "C:\django\django_venv\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "C:\django\django_venv\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "C:\django\django_venv\lib\site-packages\django\template\loader_tags.py", line 173, in render
+    return compiled_parent._render(context)
+  File "C:\django\django_venv\lib\site-packages\django\template\base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "C:\django\django_venv\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "C:\django\django_venv\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "C:\django\django_venv\lib\site-packages\django\template\loader_tags.py", line 69, in render
+    result = block.nodelist.render(context)
+  File "C:\django\django_venv\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "C:\django\django_venv\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "C:\django\django_venv\lib\site-packages\django\template\loader_tags.py", line 200, in render
+    template = context.template.engine.get_template(template_name)
+  File "C:\django\django_venv\lib\site-packages\django\template\engine.py", line 190, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "C:\django\django_venv\lib\site-packages\django\template\engine.py", line 157, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "C:\django\django_venv\lib\site-packages\django\template\loaders\base.py", line 46, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "C:\django\django_venv\lib\site-packages\django\template\base.py", line 189, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\django\django_venv\lib\site-packages\django\template\base.py", line 231, in compile_nodelist
+    return parser.parse()
+  File "C:\django\django_venv\lib\site-packages\django\template\base.py", line 510, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\django\django_venv\lib\site-packages\django\template\base.py", line 572, in invalid_block_tag
+    "or load this tag?" % (token.lineno, command)
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 74: 'static'. Did you forget to register or load this tag?
+2017-08-05 09:20:15,539 [Thread-449:7812] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\django\django_venv\lib\site-packages\django\template\backends\django.py", line 95, in render
+    return self.template.render(context)
+  File "C:\django\django_venv\lib\site-packages\django\template\base.py", line 206, in render
+    return self._render(context)
+  File "C:\django\django_venv\lib\site-packages\django\template\base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "C:\django\django_venv\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "C:\django\django_venv\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "C:\django\django_venv\lib\site-packages\django\template\loader_tags.py", line 173, in render
+    return compiled_parent._render(context)
+  File "C:\django\django_venv\lib\site-packages\django\template\base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "C:\django\django_venv\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "C:\django\django_venv\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "C:\django\django_venv\lib\site-packages\django\template\loader_tags.py", line 69, in render
+    result = block.nodelist.render(context)
+  File "C:\django\django_venv\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "C:\django\django_venv\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "C:\django\django_venv\lib\site-packages\django\template\loader_tags.py", line 200, in render
+    template = context.template.engine.get_template(template_name)
+  File "C:\django\django_venv\lib\site-packages\django\template\engine.py", line 190, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "C:\django\django_venv\lib\site-packages\django\template\engine.py", line 169, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: compstudent
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\django\django_venv\lib\site-packages\django\core\handlers\base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\django\django_venv\lib\site-packages\django\core\handlers\base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\django\maizi\maizi_app\views.py", line 12, in index
+    return render(request, 'index.html', locals())
+  File "C:\django\django_venv\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "C:\django\django_venv\lib\site-packages\django\template\loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "C:\django\django_venv\lib\site-packages\django\template\backends\django.py", line 97, in render
+    reraise(exc, self.backend)
+  File "C:\django\django_venv\lib\site-packages\django\template\backends\django.py", line 118, in reraise
+    six.reraise(exc.__class__, new, sys.exc_info()[2])
+  File "C:\django\django_venv\lib\site-packages\django\utils\six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "C:\django\django_venv\lib\site-packages\django\template\backends\django.py", line 95, in render
+    return self.template.render(context)
+  File "C:\django\django_venv\lib\site-packages\django\template\base.py", line 206, in render
+    return self._render(context)
+  File "C:\django\django_venv\lib\site-packages\django\template\base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "C:\django\django_venv\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "C:\django\django_venv\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "C:\django\django_venv\lib\site-packages\django\template\loader_tags.py", line 173, in render
+    return compiled_parent._render(context)
+  File "C:\django\django_venv\lib\site-packages\django\template\base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "C:\django\django_venv\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "C:\django\django_venv\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "C:\django\django_venv\lib\site-packages\django\template\loader_tags.py", line 69, in render
+    result = block.nodelist.render(context)
+  File "C:\django\django_venv\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "C:\django\django_venv\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "C:\django\django_venv\lib\site-packages\django\template\loader_tags.py", line 200, in render
+    template = context.template.engine.get_template(template_name)
+  File "C:\django\django_venv\lib\site-packages\django\template\engine.py", line 190, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "C:\django\django_venv\lib\site-packages\django\template\engine.py", line 169, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: compstudent
+2017-08-05 10:02:31,416 [Thread-2:4180] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\django\django_venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compile_func = self.tags[command]
+KeyError: 'uploads'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\django\django_venv\lib\site-packages\django\core\handlers\base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\django\django_venv\lib\site-packages\django\core\handlers\base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\django\maizi\maizi_app\views.py", line 14, in index
+    return render(request, 'index.html', locals())
+  File "C:\django\django_venv\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "C:\django\django_venv\lib\site-packages\django\template\loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "C:\django\django_venv\lib\site-packages\django\template\backends\django.py", line 95, in render
+    return self.template.render(context)
+  File "C:\django\django_venv\lib\site-packages\django\template\base.py", line 206, in render
+    return self._render(context)
+  File "C:\django\django_venv\lib\site-packages\django\template\base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "C:\django\django_venv\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "C:\django\django_venv\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "C:\django\django_venv\lib\site-packages\django\template\loader_tags.py", line 173, in render
+    return compiled_parent._render(context)
+  File "C:\django\django_venv\lib\site-packages\django\template\base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "C:\django\django_venv\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "C:\django\django_venv\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "C:\django\django_venv\lib\site-packages\django\template\loader_tags.py", line 69, in render
+    result = block.nodelist.render(context)
+  File "C:\django\django_venv\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "C:\django\django_venv\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "C:\django\django_venv\lib\site-packages\django\template\loader_tags.py", line 200, in render
+    template = context.template.engine.get_template(template_name)
+  File "C:\django\django_venv\lib\site-packages\django\template\engine.py", line 190, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "C:\django\django_venv\lib\site-packages\django\template\engine.py", line 157, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "C:\django\django_venv\lib\site-packages\django\template\loaders\base.py", line 46, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "C:\django\django_venv\lib\site-packages\django\template\base.py", line 189, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\django\django_venv\lib\site-packages\django\template\base.py", line 231, in compile_nodelist
+    return parser.parse()
+  File "C:\django\django_venv\lib\site-packages\django\template\base.py", line 516, in parse
+    raise self.error(token, e)
+  File "C:\django\django_venv\lib\site-packages\django\template\base.py", line 514, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\django\django_venv\lib\site-packages\django\template\defaulttags.py", line 886, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "C:\django\django_venv\lib\site-packages\django\template\base.py", line 510, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\django\django_venv\lib\site-packages\django\template\base.py", line 566, in invalid_block_tag
+    get_text_list(["'%s'" % p for p in parse_until]),
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 9: 'uploads', expected 'empty' »ò 'endfor'. Did you forget to register or load this tag?
+2017-08-05 10:02:37,541 [Thread-8:6760] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\django\django_venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compile_func = self.tags[command]
+KeyError: 'uploads'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\django\django_venv\lib\site-packages\django\core\handlers\base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\django\django_venv\lib\site-packages\django\core\handlers\base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\django\maizi\maizi_app\views.py", line 14, in index
+    return render(request, 'index.html', locals())
+  File "C:\django\django_venv\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "C:\django\django_venv\lib\site-packages\django\template\loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "C:\django\django_venv\lib\site-packages\django\template\backends\django.py", line 95, in render
+    return self.template.render(context)
+  File "C:\django\django_venv\lib\site-packages\django\template\base.py", line 206, in render
+    return self._render(context)
+  File "C:\django\django_venv\lib\site-packages\django\template\base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "C:\django\django_venv\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "C:\django\django_venv\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "C:\django\django_venv\lib\site-packages\django\template\loader_tags.py", line 173, in render
+    return compiled_parent._render(context)
+  File "C:\django\django_venv\lib\site-packages\django\template\base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "C:\django\django_venv\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "C:\django\django_venv\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "C:\django\django_venv\lib\site-packages\django\template\loader_tags.py", line 69, in render
+    result = block.nodelist.render(context)
+  File "C:\django\django_venv\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "C:\django\django_venv\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "C:\django\django_venv\lib\site-packages\django\template\loader_tags.py", line 200, in render
+    template = context.template.engine.get_template(template_name)
+  File "C:\django\django_venv\lib\site-packages\django\template\engine.py", line 190, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "C:\django\django_venv\lib\site-packages\django\template\engine.py", line 157, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "C:\django\django_venv\lib\site-packages\django\template\loaders\base.py", line 46, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "C:\django\django_venv\lib\site-packages\django\template\base.py", line 189, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\django\django_venv\lib\site-packages\django\template\base.py", line 231, in compile_nodelist
+    return parser.parse()
+  File "C:\django\django_venv\lib\site-packages\django\template\base.py", line 516, in parse
+    raise self.error(token, e)
+  File "C:\django\django_venv\lib\site-packages\django\template\base.py", line 514, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\django\django_venv\lib\site-packages\django\template\defaulttags.py", line 886, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "C:\django\django_venv\lib\site-packages\django\template\base.py", line 510, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\django\django_venv\lib\site-packages\django\template\base.py", line 566, in invalid_block_tag
+    get_text_list(["'%s'" % p for p in parse_until]),
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 9: 'uploads', expected 'empty' »ò 'endfor'. Did you forget to register or load this tag?
+2017-08-05 10:03:11,864 [Thread-16:8160] [django.request:182] [base:get_response] [WARNING]- Not Found: /11python1.png
+2017-08-05 10:04:36,814 [Thread-27:8060] [django.request:182] [base:get_response] [WARNING]- Not Found: /uploads/{{ studycon.studyImg }}
+2017-08-05 10:04:37,065 [Thread-28:4544] [django.request:182] [base:get_response] [WARNING]- Not Found: /uploads/{{ studycon.studyImg }}
+2017-08-05 10:07:53,592 [Thread-33:7328] [django.request:182] [base:get_response] [WARNING]- Not Found: /uploads/{{ studycon.studyImg }}
+2017-08-05 10:07:53,829 [Thread-34:6848] [django.request:182] [base:get_response] [WARNING]- Not Found: /uploads/{{ studycon.studyImg }}
+2017-08-05 10:08:08,336 [Thread-39:4620] [django.request:182] [base:get_response] [WARNING]- Not Found: /uploads/{{ studycon.studyImg }}
+2017-08-05 10:08:08,603 [Thread-40:7576] [django.request:182] [base:get_response] [WARNING]- Not Found: /uploads/{{ studycon.studyImg }}
+2017-08-05 10:08:11,928 [Thread-42:6868] [django.request:182] [base:get_response] [WARNING]- Not Found: /uploads/{{ studycon.studyImg }}
+2017-08-05 10:08:12,187 [Thread-43:2024] [django.request:182] [base:get_response] [WARNING]- Not Found: /uploads/{{ studycon.studyImg }}
+2017-08-05 10:08:42,824 [Thread-48:5856] [django.request:182] [base:get_response] [WARNING]- Not Found: /uploads/{{ studycon.studyImg }}
+2017-08-05 10:08:45,921 [Thread-54:7008] [django.request:182] [base:get_response] [WARNING]- Not Found: /uploads/{{ studycon.studyImg }}
+2017-08-05 11:27:53,074 [Thread-136:5856] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\django\django_venv\lib\site-packages\django\core\handlers\base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\django\django_venv\lib\site-packages\django\core\handlers\base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\django\maizi\maizi_app\views.py", line 16, in index
+    return render(request, 'index.html', locals())
+  File "C:\django\django_venv\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "C:\django\django_venv\lib\site-packages\django\template\loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "C:\django\django_venv\lib\site-packages\django\template\backends\django.py", line 95, in render
+    return self.template.render(context)
+  File "C:\django\django_venv\lib\site-packages\django\template\base.py", line 206, in render
+    return self._render(context)
+  File "C:\django\django_venv\lib\site-packages\django\template\base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "C:\django\django_venv\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "C:\django\django_venv\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "C:\django\django_venv\lib\site-packages\django\template\loader_tags.py", line 173, in render
+    return compiled_parent._render(context)
+  File "C:\django\django_venv\lib\site-packages\django\template\base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "C:\django\django_venv\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "C:\django\django_venv\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "C:\django\django_venv\lib\site-packages\django\template\loader_tags.py", line 69, in render
+    result = block.nodelist.render(context)
+  File "C:\django\django_venv\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "C:\django\django_venv\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "C:\django\django_venv\lib\site-packages\django\template\loader_tags.py", line 200, in render
+    template = context.template.engine.get_template(template_name)
+  File "C:\django\django_venv\lib\site-packages\django\template\engine.py", line 190, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "C:\django\django_venv\lib\site-packages\django\template\engine.py", line 157, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "C:\django\django_venv\lib\site-packages\django\template\loaders\base.py", line 40, in get_template
+    contents = self.get_contents(origin)
+  File "C:\django\django_venv\lib\site-packages\django\template\loaders\filesystem.py", line 24, in get_contents
+    with io.open(origin.name, encoding=self.engine.file_charset) as fp:
+PermissionError: [Errno 13] Permission denied: 'C:\\django\\maizi\\templates\\compceo.html'
