@@ -1,5 +1,7 @@
 # -*- coding:utf-8 -*-
 # @author:sumin
+from django.http import HttpResponse, HttpResponseNotFound
+from django.template.response import TemplateResponse
 from django.shortcuts import render
 import logging
 from .models import *
@@ -14,4 +16,5 @@ def index(request):
         studylistcon = StudyList.objects.all()
     except Exception as e:
         logger.error(e)
-    return render(request, 'index.html', locals())
+    return TemplateResponse(request, 'index.html', locals())
+
